@@ -1,0 +1,17 @@
+body {
+	background-color: yellow;
+}
+
+h1 {
+	font-family: "Comic Sans MS", serif;
+}
+
+a {
+	color: red;
+	font-weight: bold;
+}
+
+ul {
+	font-family: "Lucida Console", serif;
+	list-style-type: square;
+}

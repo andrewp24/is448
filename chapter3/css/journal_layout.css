@@ -1,0 +1,38 @@
+.greenBorder {
+    border: 10px white solid;
+    background-color: white;
+}
+
+.redBorder {
+    background: #a8f0f0;
+    text-align: right;
+}
+
+.orangeBorder {
+    font-size: 14pt;
+}
+
+.purpleBorder {
+    border-bottom: 2px blue dashed;
+}
+
+.blueBorder {
+    border: 4px #c2e9e9 solid;
+    background-color: #E8FBFB;
+    padding: 5px 5px 5px 5px;
+    margin: 10px 0px 0px 0px;
+}
+
+.blueBorder .spacer {
+    clear: both;
+}
+
+.blueBorder img {
+    float: right;
+}
+
+body {
+    margin-right: 10%;
+    margin-left: 10%;
+    background-image: url("http://userpages.umbc.edu/~sampath/is448/chap3-examples/lab/background.gif");
+}
