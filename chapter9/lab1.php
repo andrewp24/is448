@@ -3,34 +3,38 @@
 <head>
 <title>Background Colors change based on the day of the week</title>
 </head>
-<body bgcolor= 
-    <?php 
-    $dayofweek = date("l");
+<body>
+    <style>
+        body {
+            background-color:  
+                <?php 
+                    $dayofweek = date("l");
 
-    if($dayofweek == "Monday"){
-        echo("red");
-       }
-    elseif($dayofweek == "Tuesday"){
-        echo("orange");
-    }
-    elseif($dayofweek == "Wednesday"){
-        echo("yellow");
-    }
-    elseif($dayofweek == "Thursday"){
-        echo("green");
-    }
-    elseif($dayofweek == "Friday"){
-        echo("blue");
-    }
-    elseif($dayofweek == "Saturday"){
-        echo("navy");
-    }
-    elseif($dayofweek == "Sunday"){
-        echo("purple");
-    }
-
-?>
->
+                    if($dayofweek == "Monday"){
+                        echo("red");
+                    }
+                    elseif($dayofweek == "Tuesday"){
+                        echo("orange");
+                    }
+                    elseif($dayofweek == "Wednesday"){
+                        echo("yellow");
+                    }
+                    elseif($dayofweek == "Thursday"){
+                        echo("green");
+                    }
+                    elseif($dayofweek == "Friday"){
+                        echo("blue");
+                    }
+                    elseif($dayofweek == "Saturday"){
+                        echo("navy");
+                    }
+                    elseif($dayofweek == "Sunday"){
+                        echo("purple");
+                    }
+                ?>
+        }
+    </style>
+   
 <h1>Welcome to my home page</h1>
 <p>
 <?php
