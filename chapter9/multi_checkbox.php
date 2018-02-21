@@ -6,8 +6,20 @@
 </head>
 <body>
 <p>
-<br />
-<b>Notice</b>:  Undefined index: hobbies in <b>/afs/umbc.edu/users/s/a/sampath/pub/swe2018/is448/chap9-examples/php2/multi_checkbox.php</b> on line <b>13</b><br />
-No hobbies selected</p>
+<?php
+
+#this example shows how to take user input from a checkbox and process in PHP
+
+	$hobbies_list = $_POST['hobbies'];
+	if(!empty($hobbies_list)){
+	
+		foreach ($hobbies_list as $hobby){
+			echo "Hobbies selected: $hobby <br />";
+		}
+	}else{
+		echo "No hobbies selected";
+	}
+?>
+</p>
 </body>
 </html>

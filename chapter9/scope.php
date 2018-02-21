@@ -6,13 +6,39 @@
   <body>
     <p>
 	
-		
+	<?php
+	#this is a global $sum variable
+	$sum = 10;	
+	
+	//function returns the sum of all elements of an array
+	function add_elements($list){
+		//the $sum variable defined here is local to the function
+		$sum = 0;
+		foreach ($list as $value){
+			$sum = $sum + $value;
+		}
+		return $sum;
+	}
+	
+	
+
+	$numbers = array(2, 4, 6, 8, 10);
+	
+	//invoking the 'add' function
+	$answer = add_elements($numbers);
+	?>
+	
     <b>Welcome to my home page</b> <br /> <br />
 	The original array is<br />
 	
-	2 <br />4 <br />6 <br />8 <br />10 <br />	
-	The sum of elements of array is 30 <br />
-	The value of global variable sum is still 10    
+	<?php 
+	foreach ($numbers as $num)
+		print("$num <br />");
+	?>
+	
+	The sum of elements of array is <?php echo $answer ?> <br />
+	The value of global variable sum is still <?php echo $sum ?>
+    
     </p>
   </body>
 </html>

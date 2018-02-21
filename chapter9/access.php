@@ -5,6 +5,21 @@
 </head>
 <body>
 	<p>
-	2 <br />3 <br />4 <br />5 <br />The min. temperature for Mon is 45 <br />The min. temperature for Tue is 35 <br />The min. temperature for Wed is 56 <br />	</p>
+	<?php
+
+	$new = array(2,3,4,5);
+
+	foreach ($new as $number){
+		print("$number <br />");
+	}
+
+
+	$lows = array("Mon"=>45,"Tue"=>35,"Wed"=>56);
+	foreach ($lows as $day=>$temp){
+		print("The min. temperature for $day is $temp <br />");
+	}
+
+	?>
+	</p>
 <body>
 </html>

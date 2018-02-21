@@ -3,9 +3,41 @@
   <head> <title> Sorting </title>
   </head>
   <body>
-    <h4> Original Array </h4>
-[Fred] => 31 <br />[Al] => 27 <br />[Gandalf] => wizzard <br />[Betty] => 42 <br />[Frodo] => hobbit <br /><h4> Array sorted with sort </h4>
-[0] = hobbit <br />[1] = wizzard <br />[2] = 27 <br />[3] = 31 <br />[4] = 42 <br /><h4> Array sorted with asort </h4>
-[Frodo] = hobbit <br />[Gandalf] = wizzard <br />[Al] = 27 <br />[Fred] = 31 <br />[Betty] = 42 <br /><h4> Array sorted with ksort </h4>
-[Al] = 27 <br />[Betty] = 42 <br />[Fred] = 31 <br />[Frodo] = hobbit <br />[Gandalf] = wizzard <br /></body>
+    <?php
+      $original = array("Fred" => 31, "Al" => 27, 
+                        "Gandalf" => "wizzard",
+						          "Betty" => 42, 
+                      "Frodo" => "hobbit");
+    ?>
+<h4> Original Array </h4>
+<?php
+foreach ($original as $key => $value)
+	print("[$key] => $value <br />");
+
+$new = $original;
+sort($new);
+?>
+<h4> Array sorted with sort </h4>
+<?php
+foreach ($new as $key => $value)
+	print("[$key] = $value <br />");
+
+$new = $original;
+asort($new);
+?>
+<h4> Array sorted with asort </h4>
+<?php
+foreach ($new as $key => $value)
+	print("[$key] = $value <br />");
+
+$new = $original;
+ksort($new);
+?>
+<h4> Array sorted with ksort </h4>
+<?php
+foreach ($new as $key => $value)
+        print("[$key] = $value <br />");
+
+?>
+</body>
 </html>

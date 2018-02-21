@@ -7,14 +7,48 @@
   <body>
     
 	
-	<br />
-<b>Notice</b>:  Undefined index: custName in <b>/afs/umbc.edu/users/s/a/sampath/pub/swe2018/is448/chap9-examples/php2/display_info.php</b> on line <b>18</b><br />
-<br />
-<b>Notice</b>:  Undefined index: dayTimeNumber in <b>/afs/umbc.edu/users/s/a/sampath/pub/swe2018/is448/chap9-examples/php2/display_info.php</b> on line <b>19</b><br />
-<br />
-<b>Notice</b>:  Undefined index: commentsBox in <b>/afs/umbc.edu/users/s/a/sampath/pub/swe2018/is448/chap9-examples/php2/display_info.php</b> on line <b>20</b><br />
-<p>You haven't entered all information in the form.
-			Please go back and re-enter</p>.
+	<?php
+		//retrieve values of form fields entered by the user
+		//the form field values are sent as a query string to the PHP page
+		//the parameter-name in the query string is the name of the form field
+		//the parameter-value is the user-entered value
+		//all the values are stored by PHP in the $_POST array
+		//the value can be accessed by indexing the $_POST array using the query-string parameter-name
+
+		$customerName = $_POST["custName"];
+		$phoneNumber = $_POST["dayTimeNumber"];
+		$comments = $_POST["commentsBox"];
+		
+		if ((isset($customerName) && (!empty($customerName))) &&
+			(isset($phoneNumber) && (!empty($phoneNumber))) &&
+			(isset($comments) && (!empty($comments)))
+			)
+
+		{
+		?>
+			<p>
+			Thank you for the feedack,
+			<strong><?php echo $customerName ?></strong>. 
+			Your comment 
+			<strong> "<?php echo $comments ?>" </strong> 
+			is extremely useful to us. <br />
+			
+			We will
+			contact you at <strong> <?php echo $phoneNumber ?> </strong> if we need further information.
+			
+			</p>
+
+
+			
+		<?php
+		}
+		else{
+			echo "<p>You haven't entered all information in the form.
+			Please go back and re-enter</p>.";
+		}
+
+		?>
+
 	
 	</body>
 </html>
