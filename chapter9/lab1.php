@@ -9,22 +9,26 @@
             background-color:
                 <?php
 $dayofweek = date("l");
-
+$bgcolors = array("Monday" => "red", "Tuesday" => "orange", "Wednesday" => "yellow", "Thursday" => "green", "Friday" => "blue", "Saturday" => "navy", "Sunday" => "purple");
+$bgcolor = $bgcolors[$dayofweek];
+echo ($bgcolor);
+/*
 if ($dayofweek == "Monday") {
-    echo ("red");
+echo ("red");
 } elseif ($dayofweek == "Tuesday") {
-    echo ("orange");
+echo ("orange");
 } elseif ($dayofweek == "Wednesday") {
-    echo ("yellow");
+echo ("yellow");
 } elseif ($dayofweek == "Thursday") {
-    echo ("green");
+echo ("green");
 } elseif ($dayofweek == "Friday") {
-    echo ("blue");
+echo ("blue");
 } elseif ($dayofweek == "Saturday") {
-    echo ("navy");
+echo ("navy");
 } elseif ($dayofweek == "Sunday") {
-    echo ("purple");
+echo ("purple");
 }
+ */
 ?>
         }
     </style>
