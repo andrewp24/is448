@@ -13,36 +13,31 @@ $d = date("D");
 //CORRECT
 //if (  ($age > 16)   && ($age < 21) )
 //{
-//	echo "eligible to drive";
+//    echo "eligible to drive";
 //}
 
 /////WRONG
 //if (  (16 < $age < 21))
 //{
-//	echo "eligible to drive";
+//    echo "eligible to drive";
 //}
-
 
 ///WRONG
 //if ($age > 16  && < 21)
 
+if ($d == "Fri") {
 
-if ($d == "Fri"){
-
-	echo "Weekend is coming up";
+    echo "Weekend is coming up";
 }
 
-if (($d == "Fri") && ($age > 21))
-{
-	  echo "Hello!<br />"; 
-	  echo "Have a nice weekend!";
-	  echo "See you on Monday!";
-	  echo "Bars are waiting for you!";
-	  echo "HAVE A GREAT DAY";
-}
-else
-{
-	  print("A few more days to go for the weekend");
+if (($d == "Fri") && ($age > 21)) {
+    echo "Hello!<br />";
+    echo "Have a nice weekend!";
+    echo "See you on Monday!";
+    echo "Bars are waiting for you!";
+    echo "HAVE A GREAT DAY";
+} else {
+    print("A few more days to go for the weekend");
 }
 ?>
 </p>

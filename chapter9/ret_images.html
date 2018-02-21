@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="EN">
-    <head>
-        <title>Search for images!</title>
-		<link rel="stylesheet" type="text/css" href="form_proc.css" />
-    </head>
-    <body>
-        <h1>Image search!</h1>
-        <p>
-			Enter a keyword for an image you want, and I will retrieve 
-			and display that image for you!
-        </p>
-        
-        <hr />
-		
-		<form name="imageForm" id="imageForm" action="ret_image.php" method="POST">
+
+<head>
+    <title>Search for images!</title>
+    <link rel="stylesheet" type="text/css" href="css/form_proc.css" />
+</head>
+
+<body>
+    <h1>Image search!</h1>
+    <p>
+        Enter a keyword for an image you want, and I will retrieve and display that image for you!
+    </p>
+
+    <hr />
+
+    <form name="imageForm" id="imageForm" action="ret_image.php" method="POST">
         <dl>
             <dt>Enter keyword</dt>
             <dd>
                 <input type="text" name="searchKeyword" id="keyword" />
-			</dd>
-		</dl>	
-			<input type="submit" value="Submit" />
-		</form>
-		
-		
-    </body>
+            </dd>
+        </dl>
+        <input type="submit" value="Submit" />
+    </form>
+
+
+</body>
+
 </html>

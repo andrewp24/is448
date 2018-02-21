@@ -4,45 +4,41 @@
 <body>
 <p>
 <?php
-	/*
-	Illustrates use of Strings in PHP
-	*/
+/*
+Illustrates use of Strings in PHP
+ */
 
-	//a simple string
-	$txt="Hello World";
-	
-	$txt2 = 'Hello World';
-	
-	echo "$txt <br/>";
-	
+//a simple string
+$txt = "Hello World";
 
-	//changing the value of $txt2
-	$txt2 = "1234";
-	
+$txt2 = 'Hello World';
 
-	
-	$txt3 = $txt.','.$txt2;
-	echo "$txt3 <br />";
+echo "$txt <br/>";
 
-	//using strlen function
-	$len = strlen($txt3);
-	echo "length of string is: $len <br />";
+//changing the value of $txt2
+$txt2 = "1234";
 
-	//using strcmp function
-	//strcmp returns 0 if the two strings are identical
-	$txt4 = "1234";
-	$num = strcmp($txt2, $txt4);
-	echo "Value returned by strcmp: $num";
-	echo "<br />";
+$txt3 = $txt . ',' . $txt2;
+echo "$txt3 <br />";
 
-	//because strcmp returns 0 when the strings are identical
-	//you have to be careful when using it in an if-statement
-	if(!(strcmp($txt2, $txt4))){
-		echo "Strings are identical <br />";
-	}
-	else{
-		echo "Strings are not identical <br />";
-	}
+//using strlen function
+$len = strlen($txt3);
+echo "length of string is: $len <br />";
+
+//using strcmp function
+//strcmp returns 0 if the two strings are identical
+$txt4 = "1234";
+$num = strcmp($txt2, $txt4);
+echo "Value returned by strcmp: $num";
+echo "<br />";
+
+//because strcmp returns 0 when the strings are identical
+//you have to be careful when using it in an if-statement
+if (!(strcmp($txt2, $txt4))) {
+    echo "Strings are identical <br />";
+} else {
+    echo "Strings are not identical <br />";
+}
 ?>
 </p>
 </body>
