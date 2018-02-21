@@ -2,9 +2,7 @@
 <html lang="EN">
 <head>
 <title>Background Colors change based on the day of the week</title>
-</head>
-<body>
-    <style>
+<style>
         body {
             background-color:
                 <?php
@@ -32,6 +30,8 @@ echo ("purple");
 ?>
         }
     </style>
+</head>
+<body>
 
 <h1>Welcome to my home page</h1>
 <p>
