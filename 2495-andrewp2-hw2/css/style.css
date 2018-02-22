@@ -1,0 +1,63 @@
+/*
+contains the styling for the full body.
+*/
+
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #bf5f82
+}
+
+/*
+contains the styling for the intro div of all pages
+*/
+
+.intro {
+    background-color: #f48fb1;
+}
+
+/*
+contains the styling for the forms div on any page
+*/
+
+.forms {
+    margin-top: 100px;
+    font-weight: bold;
+    text-align: center;
+    clear: left;
+}
+
+/*
+formats the input tags in the forms div
+*/
+
+.forms input {
+    width: 20%;
+    clear: both;
+}
+
+/*
+formats the buttons
+*/
+
+button {
+    background-color: #7cb342;
+    font-weight: bold;
+    width: 100px;
+}
+
+/*
+format for when the buttons are being hovered
+*/
+
+button:hover {
+    background-color: #ade470;
+}
+
+/*
+formats links when hovering over them
+*/
+
+a:hover {
+    color: #ade470
+}
