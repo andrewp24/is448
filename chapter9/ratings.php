@@ -17,11 +17,10 @@ if ((isset($movieName) && (!empty($movieName))) &&
     (isset($movieRating) && (!empty($movieRating))) &&
     (isset($userName) && (!empty($userName)))
 ) {
-    if (preg_match("/^[a-zA-Z0-9 .]+$/", $userName))
-    //if statement
-
-    {
-        ;
+    if (preg_match("/^[a-zA-Z .]+$/", $userName)) {
+        echo "Valid username. <br />";
+    } else {
+        echo "Invalid username <br />";
     }
     ?>
 			<p>
