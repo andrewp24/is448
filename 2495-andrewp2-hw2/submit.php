@@ -3,7 +3,14 @@ $myfile = fopen("/afs/umbc.edu/users/a/n/andrewp2/pub/text-files/test.txt", "w")
 
 $favSong = $_POST["fav_song"];
 $comp = $_POST["composer"];
-$musicianName = $_POST["musician_name"]
+$musicianName = $_POST["musician_name"];
+//write to file
+$out_data = "$favSong, $comp, $musicianName";
+$bytes_written = fwrite($myfile, $out_data);
+
+if ($bytes_written == false) {
+    echo ">write failed <br />";
+}
 
 ?>
 
