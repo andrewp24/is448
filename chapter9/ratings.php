@@ -9,15 +9,25 @@
 
 	<?php
 
+$userName = $_POST["user_name"];
 $movieName = $_POST["movie_name"];
 $movieRating = $_POST["rating"];
 
 if ((isset($movieName) && (!empty($movieName))) &&
-    (isset($movieRating) && (!empty($movieRating)))
+    (isset($movieRating) && (!empty($movieRating))) &&
+    (isset($userName) && (!empty($userName)))
 ) {
+    if (preg_match("/^[a-zA-Z0-9 .]+$/", $userName))
+    //if statement
+
+    {
+        ;
+    }
     ?>
 			<p>
-			Thank you for the feedack. The movie you reviewed was:
+			Thank you
+			<strong> <?php echo $userName ?></strong>
+			for the feedack. The movie you reviewed was:
 			<strong><?php echo $movieName ?></strong>.
 			You you gave it a
 			<strong> "<?php echo $movieRating ?>" </strong>
