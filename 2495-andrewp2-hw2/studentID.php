@@ -1,20 +1,14 @@
 <?php
-$myfile = fopen("/afs/umbc.edu/users/a/n/andrewp2/pub/text-files/test.txt", "a") or die("Unable to open file!");
+$studentName = $_POST["name"];
+$campusID = $_POST["campus_id"];
 
-$favSong = $_POST["fav_song"];
-$comp = $_POST["composer"];
-$musicianName = $_POST["musician_name"];
-//write to file
-$out_data = "$favSong, $comp, $musicianName \n";
-
-if ((isset($favSong) && (!empty($favSong))) &&
-    (isset($comp) && (!empty($comp))) &&
-    (isset($musicianName) && (!empty($musicianName)))
+if ((isset($studentName) && (!empty($studentName))) &&
+    (isset($campusID) && (!empty($campusID)))
 ) {
-    $bytes_written = fwrite($myfile, $out_data);
-
-    if ($bytes_written == false) {
-        echo ">write failed <br />";
+    if (preg_match("/^\d*$/", $phoneNumber)) {
+        echo "Valid Campus ID <br />";
+    } else {
+        echo "Invalid Campus ID, go back and fix. needs to be in the following format: AB1234 <br />";
     }
 
     ?>
@@ -23,7 +17,7 @@ if ((isset($favSong) && (!empty($favSong))) &&
 
 
 <head>
-    <title>Homework 2: submit.php</title>
+    <title>Homework 2: Name and Campus ID</title>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
     <link rel="stylesheet" type="text/css" href="css/style.css" title="style" />
 </head>
@@ -31,22 +25,17 @@ if ((isset($favSong) && (!empty($favSong))) &&
 <body>
     <div class="intro">
         <h1>Thanks for submitting your answers.</h1>
-        <p>They have been recorded.</p>
 
         <p>
-            Favorite song:
-            <strong> <?php echo $favSong ?></strong>
+            Name:
+            <strong> <?php echo $studentName ?></strong>
         </p>
         <p>
-            Composer:
-            <strong> <?php echo $comp ?></strong>
-        </p>
-        <p>
-            Musician Name:
-            <strong> <?php echo $musicianName ?></strong>
+            Campus ID:
+            <strong> <?php echo $campusID ?></strong>
         </p>
 	<p>
-        <a href="music.html">Click here to go back to the main page.</a>
+        <a href="studentID.html">Click here to go back to the main page.</a>
     </p>
     </div>
 </body>
@@ -63,7 +52,7 @@ if ((isset($favSong) && (!empty($favSong))) &&
 
 
 <head>
-    <title>Homework 2: submit.php</title>
+    <title>Homework 2: Name and Campus ID</title>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
     <link rel="stylesheet" type="text/css" href="css/style.css" title="style" />
 </head>
@@ -72,7 +61,7 @@ if ((isset($favSong) && (!empty($favSong))) &&
     <div class="intro">
         <h1>Your answers have not been recorded.</h1>
         <p>You did not put text into all the text boxes. Go back and re enter answers.</p>
-        <a href="music.html">Click here to go back to the main page.</a>
+        <a href="studentID.html">Click here to go back to the main page.</a>
     </p>
     </div>
 </body>
