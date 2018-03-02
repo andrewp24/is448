@@ -5,7 +5,7 @@ $campusID = $_POST["campus_id"];
 if ((isset($studentName) && (!empty($studentName))) &&
     (isset($campusID) && (!empty($campusID)))
 ) {
-    if (preg_match("/^\d*$/", $phoneNumber)) {
+    if (preg_match("/^[a-zA-Z]{2}\d{4}$/", $campusID)) {
         echo "Valid Campus ID <br />";
     } else {
         echo "Invalid Campus ID, go back and fix. needs to be in the following format: AB1234 <br />";
