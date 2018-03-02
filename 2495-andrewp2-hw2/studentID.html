@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head>
+    <title>Homework 2: Music Questions</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" title="style" />
+</head>
+
+<body>
+    <div class="intro">
+        <h1>Welcome to this questionaire.</h1>
+        <p>There will be places to input answers to 3 questions.</p>
+    </div>
+    <div class="forms">
+        <form name="favorite_song_info" action="submit.php" method="POST">
+            <p>
+                Name of your favorite song:
+                <input type="text" name="fav_song" maxlength="25" />
+            </p>
+            <p>
+                The composer of that song:
+                <input type="text" name="composer" maxlength="25" />
+            </p>
+            <p>
+                Performing artist/group:
+                <input type="text" name="musician_name" maxlength="25" />
+            </p>
+            <button type="submit">Submit</button>
+        </form>
+        <form action="display-results.php">
+            <p>
+                <button type="submit">Display Results</button>
+            </p>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
