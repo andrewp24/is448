@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Place Order</title>
+  <link rel="stylesheet" type="text/css" href="form_proc.css">
+
+</head>
+
+<body>
+  <h1>Concert tickets order form</h1>
+  <form name="order_form" action="order.php" method="post">
+
+    <label>
+      Concert name:
+      <input type="text" name="c_name" />
+    </label>
+    <br />
+    <br />
+
+    <label>
+      Concert location:
+      <input type="text" name="c_location" />
+    </label>
+    <br />
+    <br />
+
+    <label>
+      Concert date:
+      <select name="c_date">
+        <option value="may18">May 18, 2018</option>
+        <option value="jun15">June 15, 2018</option>
+        <option value="jul7">July 7, 2018</option>
+        <option value="aug20">August 20, 2018</option>
+      </select>
+    </label>
+    <br />
+    <br />
+
+
+    <label>
+      Number of tickets:
+      <input type="text" name="ticket_num" />
+    </label>
+    <br />
+    <br />
+
+
+    <label>
+      Special requests:
+      <input type="text" name="spec_req" />
+    </label>
+    <br />
+    <br />
+    <label>
+      <input type="submit" id="submitButton" value="Submit request" />
+    </label>
+
+
+  </form>
+</body>
+
+</html>
