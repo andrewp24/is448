@@ -1,6 +1,10 @@
 <?php
-//ADD your session code here
-
+session_start();
+if (!isset($_SESSION["views"])) {
+    $_SESSION["views"] = 1;
+} else {
+    $_SESSION["views"]++;
+}
 ?>
 <!DOCTYPE html>
 <html lang="EN">
@@ -12,23 +16,20 @@
 
 
 
-<h1> My name is Sreedevi.</h1> 
+<h1> My name is Sreedevi.</h1>
 <p>
 	Welcome to my page.
 	I am on the faculty in the IS Department at UMBC.
 </p>
-<p> 
-	My hobbies include 
+<p>
+	My hobbies include
 </p>
 <ul>
 	<li>art </li>
 	<li>watching sci-fi</li>
 </ul>
 <p>
-<?php
-
-	//ADD code to display number of views of page here
-?>
+This is your visit number <?php echo $_SESSION["views"] ?>
 </p>
 
 </body>
