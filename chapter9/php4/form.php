@@ -5,11 +5,12 @@
 </head>
 
 <body>
-<br />
-<b>Notice</b>:  Undefined index: product_id in <b>/afs/umbc.edu/users/s/a/sampath/pub/swe2018/is448/chap9-examples/php4/form.php</b> on line <b>9</b><br />
+<?php
+$product_id= $_GET['product_id'];
+?>
 
 <h1>ORDER FORM</h1>
-<p>You clicked on the link for  </p>
+<p>You clicked on the link for <?php echo $product_id ?> </p>
 
 
 </body>

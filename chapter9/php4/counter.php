@@ -1,3 +1,7 @@
+<?php
+//ADD your session code here
+
+?>
 <!DOCTYPE html>
 <html lang="EN">
 <head>
@@ -21,6 +25,10 @@
 	<li>watching sci-fi</li>
 </ul>
 <p>
+<?php
+
+	//ADD code to display number of views of page here
+?>
 </p>
 
 </body>

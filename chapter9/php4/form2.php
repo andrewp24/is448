@@ -1,5 +1,8 @@
-<br />
-<b>Notice</b>:  Undefined index: product_id in <b>/afs/umbc.edu/users/s/a/sampath/pub/swe2018/is448/chap9-examples/php4/form2.php</b> on line <b>3</b><br />
+<?php
+session_start();
+$item_selected = $_GET['product_id'];
+$_SESSION['product_selected'] = $item_selected;
+?>
 
 
 <!DOCTYPE html>
