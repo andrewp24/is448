@@ -6,7 +6,7 @@
 <body>
 <?php
 #connect to mysql database
-$db = mysqli_connect("studentdb-maria.gl.umbc.edu", "sampath", "sampath", "sampath");
+$db = mysqli_connect("studentdb-maria.gl.umbc.edu", "andrewp2", "andrewp2", "andrewp2");
 
 if (mysqli_connect_errno()) {
     exit("Error - could not connect to MySQL");
@@ -14,16 +14,22 @@ if (mysqli_connect_errno()) {
 
 #get the parameter from the HTML form that this PHP program is connected to
 #since data from the form is sent by the HTTP POST action, use the $_POST array here
-if (isset($_POST['car_name']) && !empty($_POST['car_name'])) {
+if (isset($_POST['name']) && !empty($_POST['name']) &&
+    isset($_POST['comments']) && !empty($_POST['comments']) &&
+    isset($_POST['phone']) && !empty($_POST['phone'])) {
 
-    $carname = $_POST['car_name'];
-    echo "<p>User wants to know about car $carname</p>";
+    $usersname = $_POST['name'];
+    $comments = $_POST['comments'];
+    $phone_num = $_POST['phone'];
+    echo "<p>Your name: $usersname</p>";
+    echo "<p>Your comments: $comments</p>";
+    echo "<p>Your phone number: $phone_num</p>";
 
     #construct a query
     #query should look like this:
     #select * from cars where car_name='accord';
-    $constructed_query = "SELECT * FROM cars WHERE car_name='$carname'";
-
+    $constructed_query = "INSERT INTO guestbook (username, comment_text, phone_number) VALUES($usersname, $comments, $phone_num);";
+    
     #sanity check: print query to see if constructued query is correct
     print("<h3>Sanity check print statement:</h3> The query is: $constructed_query</br>");
 
@@ -61,21 +67,21 @@ if (isset($_POST['car_name']) && !empty($_POST['car_name'])) {
 			</h3>
 			<table border="1">
 				<tr>
-					<th> Car name </th>
+					<th> User comments </th>
 					<th> Description </th>
 				</tr>
 <?php
 for ($row_num = 0; $row_num < $num_rows; $row_num++) {
             print("<tr>");
             $row_array = mysqli_fetch_array($result);
-            print("<td>$carname </td> <td>$row_array[car_description]</td>");
+            print("<td>$user </td> <td>$row_array[car_description]</td>");
             print("</tr>");
         }
         ?>
 			</table>
 <?php
 } else {
-        echo "No information about car $carname is in table.";
+        echo "No information about car $usersname is in table.";
     }
 
     ?>
