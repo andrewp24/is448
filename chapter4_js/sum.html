@@ -1,0 +1,33 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE html PUBLIC "-//w3c//DTD XHTML 1.1//EN"  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<!-- sum.html 
+      Asks user to enter three numbers and computes the sum
+     -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>Add two numbers</title>
+</head>
+
+<body>
+
+  <h1>Mini-calculator program in Javascript</h1>
+  <h2>Calculates only the sum of two numbers though!</h2>
+  <!-- Add your javascript code here to prompt user for two numbers and to compute and display the sum -->
+  <script type="text/javascript">
+    var num1 = parseFloat(prompt('Please enter the first number.'));
+    var num2 = parseFloat(prompt('Please enter the second number.'));
+    var sum = num1 + num2;
+    var product = num1 * num2;
+    var now = new Date;
+    document.write('<h2>The answer for ' + num1 + ' + ' + num2 + ' is ' + sum + '</h2>');
+    document.write('<h2>The answer for ' + num1 + ' x ' + num2 + ' is ' + product + '</h2>');
+    document.write("Today's date is: " + now);
+  </script>
+
+
+
+</body>
+
+</html>
