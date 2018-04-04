@@ -1,0 +1,25 @@
+body {
+    width: 600px;
+    margin: 1em auto;
+    background-color: white;
+    border: 10px #D8C858 solid;
+    padding: 0.5em;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.results {
+    background-color: #D8C858;
+    border: 10px black solid;
+    padding: 10px;
+}
+
+results .title {
+    font-weight: bold;
+    font-size: 24px;
+}
