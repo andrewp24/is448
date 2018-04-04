@@ -49,10 +49,14 @@ if (isset($_GET['title_name']) && !empty($_GET['title_name']) &&
 
     if ($num_rows != 0) {
         if ($num_rows == 1) {?>
-        <h1>View your first blog post below!</h1>
+        <div class="header">
+            <h1>View your first blog post below!</h1>
+        </div>
         <?php
 } else {?>
-        <h1>You have <?php echo "$num_rows" ?> blog posts. Read them below!</h1>
+        <div class="header">
+            <h1>You have <?php echo "$num_rows" ?> blog posts. Read them below!</h1>
+        </div>
         <?php
 }
 
