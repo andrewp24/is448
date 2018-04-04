@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <title>Error Checking</title>
+    <title>View Posts</title>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
     <link rel="stylesheet" type="text/css" href="css/style.css" title="style" />
 </head>
@@ -28,14 +28,8 @@ if (isset($_GET['title_name']) && !empty($_GET['title_name']) &&
 
     $constructed_query = "INSERT INTO blog_posts (title, content, tags) VALUES('$title', '$content', '$tags');";
 
-    ?>
-    <h1>This page just has checks. You can ignore and click the button below to go to the next page. </h1>
-    <h2>Enjoy these pictures of a cat and a dog.</h2>
-    <p><img src="images/pupper.jpeg" alt="pupper"/></p>
-    <p><img src="images/kitto.jpeg" alt="kitten"/></p>
-    <?php
 #sanity check: print query to see if constructued query is correct
-    print("<h3>Sanity check print statement:</h3> <p>The query is: $constructed_query</p>");
+    #print("<h3>Sanity check print statement:</h3> <p>The query is: $constructed_query</p>");
 
     #Execute query
     $result = mysqli_query($db, $constructed_query);
@@ -47,18 +41,38 @@ if (isset($_GET['title_name']) && !empty($_GET['title_name']) &&
         print "<p> . $error . </p>";
         exit;
     }
+    $constructed_query = "SELECT * FROM blog_posts;";
+
+#Execute query
+    $result = mysqli_query($db, $constructed_query);
+    $num_rows = mysqli_num_rows($result);
+
+    if ($num_rows != 0) {
+        if ($num_rows == 1) {?>
+        <h1>View your first blog post below!</h1>
+        <?php
+} else {?>
+        <h1>You have <?php echo "$num_rows" ?> blog posts. Read them below!</h1>
+        <?php
+}
+
+        while ($row_array1 = mysqli_fetch_array($result)) {
+            print(" <div class='results'>
+                    <b>$row_array1[title]</b> <br />
+                    $row_array1[content]<br /> <br />
+                    <i>tags: $row_array1[tags]</i>
+                    </div>
+                    <p></p>");
+        }
+    } else {
+        echo "There is nothing in the table.";
+    }
+
     ?>
         <!--if program reaches this print statement, it means the query worked-->
-        <h3>Sanity check print statement:</h3>
-        <p>If this line is reached in the program, it means that the query worked</p>
-        <form action="show_posts.php">
-            <div class="buttons">
-                <input type="submit" value="Click to see all posts." />
-            </div>
-        </form>
         <form action="create_post.html">
             <div class="buttons">
-                <input type="submit" value="Or click here to write another."/>
+                <input type="submit" value="Click here to write another."/>
             </div>
         </form>
         <div class="valid">
