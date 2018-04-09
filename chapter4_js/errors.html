@@ -1,0 +1,56 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE html PUBLIC "-//w3c//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<!-- add-numbers.html 
+      Asks user to enter three numbers and computes the sum
+     -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title> Global and Local scope </title>
+</head>
+
+<body>
+	<h1>Demonstrates scope of variables</h1>
+
+	<script type="text/javascript">
+		"use strict"
+		//this is the main program	
+		var temp = 0;
+		var temp2 = 0;
+		increment();
+		product();
+		displayMessage();
+
+		function increment() {
+			temp = 10;
+			temp2 = 7;
+
+			var count = count + 1;
+			document.write(count);
+		}
+
+
+		function product() {
+
+
+			temp = temp * 9;
+			document.write("Value of <b>temp</b> in product function is: " + temp + "<br />");
+
+			temp2 = temp2 * 2;
+			document.write("Value of <b>temp2</b> in product function is: " + temp2 + "<br />");
+
+
+
+		}
+
+		function displayMessage() {
+			var UserName = prompt("Enter your name");
+			alert("welcome to this web page " + UserName);
+
+		}
+	</script>
+</body>
+
+</html>
