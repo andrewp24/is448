@@ -1,0 +1,32 @@
+<?xml version = "1.0"?>
+<!DOCTYPE html PUBLIC "-//w3c//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>Using regular expressions</title>
+  <script type="text/javascript">
+    /*function should check that the user entered only letters and no numbers */
+    function check_name(name) {
+      /*add your code here */
+      position = name.search(/^[A-Za-z]+$/);
+      if (position >= 0) {
+        return document.write("Welcome, " + name)
+      } else {
+        return document.write("Invalid input. Reload and try again.")
+      }
+
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Using regular expressions</h1>
+  <script type="text/javascript">
+    var username = prompt("Enter your name with only characters and no numbers");
+    check_name(username);
+  </script>
+
+</body>
+
+</html>
