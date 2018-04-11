@@ -1,0 +1,36 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<!DOCTYPE html PUBLIC "-//w3c//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<!-- validator.html
+     A document for validator.js
+     -->
+<html xmlns = "http://www.w3.org/1999/xhtml">
+  <head>
+    <title> Illustrate form input validation> </title>
+	<link rel="stylesheet" href="form_proc.css" type="text/css" />
+    <script type = "text/javascript"  src = "validator.onclick.js" >
+    </script>
+  </head>
+  <body>
+    <h3> Customer Information </h3>
+    <form method="post" action = "display_info.php">
+      <p>
+        <label>
+          <input type = "text"  id = "custName" name="customerName" />
+          Name (last_name first_name)
+        </label>
+        <br /><br />
+
+        <label>
+          <input type = "text"  id = "phone" name="phoneNumber" />
+          Phone number (ddd)ddd-dddd
+        </label>
+        <br />  <br />
+        <input type = "submit"  id = "submitButton" />
+		    <input type = "reset"  id = "reset" />
+      </p>
+    </form>
+
+  </body>
+</html>
