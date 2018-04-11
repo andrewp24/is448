@@ -1,12 +1,12 @@
-window.onload=pageLoad;
+window.onload = pageLoad;
 
-function pageLoad(){
+function pageLoad() {
 	var okButton = document.getElementById("ok");
 	okButton.onclick = actionOnClick;
 }
 
-function actionOnClick(){
-    alert("button was clicked");
+function actionOnClick() {
+	alert("button was clicked");
 }
 
 /*

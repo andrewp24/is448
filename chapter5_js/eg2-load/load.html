@@ -5,39 +5,46 @@
 <!-- load.html 
      Illustrates the use of event handler functions
      -->
-<html xmlns = "http://www.w3.org/1999/xhtml">
-  <head>
-    <title>load </title>
-	<script type = "text/javascript"  src = "load.js" >
-    </script>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>load </title>
+	<script type="text/javascript" src="load.js">
+	</script>
 	<style type="text/css">
-	body{
-	position:absolute; top: 150px; left: 150px; width:500px;
-	}
+		body {
+			position: absolute;
+			top: 150px;
+			left: 150px;
+			width: 500px;
+		}
 	</style>
-  </head>
-  <body>
-	  <form>
-		  <label>
-		  This was the greeting just displayed... Greeting appears on page load: <br />
-		  <input type="text" id="greeting_box" name="greeting" style="width: 500px;"/>
-		  </label>
-	  
-		  <br />
-	  	  <br />
-		  <br />
+</head>
 
-	  
-		  <label>
-		  <input type="button" id="quote_button" value="Click me to see the quote of the day" />
-		  </label>
+<body>
+	<form>
+		<label>
+			This was the greeting just displayed... Greeting appears on page load:
+			<br />
+			<input type="text" id="greeting_box" name="greeting" style="width: 500px;" />
+		</label>
 
-	  </form>
+		<br />
+		<br />
+		<br />
 
-	  <p>
-	  <img src="happy.jpg" id="mood" alt="moodofday"/>
-	  <input type="button" id="change" value="Click me to change mood smiley" />
-	  </p>
 
-  </body>
+		<label>
+			<input type="button" id="quote_button" value="Click me to see the quote of the day" />
+		</label>
+
+	</form>
+
+	<p>
+		<img src="happy.jpg" id="mood" alt="moodofday" />
+		<input type="button" id="change" value="Click me to change mood smiley" />
+	</p>
+
+</body>
+
 </html>

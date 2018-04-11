@@ -5,33 +5,36 @@
 <!-- validator.html
      A document for validator.js
      -->
-<html xmlns = "http://www.w3.org/1999/xhtml">
-  <head>
-    <title> Illustrate form input validation> </title>
-	<link rel="stylesheet" href="form_proc.css" type="text/css" />
-    <script type = "text/javascript"  src = "validator.onsubmit.js" >
-    </script>
-  </head>
-  <body>
-    <h3> Customer Information </h3>
-    <form action = "display_info.php" method="post" id="formdisplayinfo">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-      <p>
-        <label>
-          <input type = "text"  id = "custName" name="customerName" />
-          Name (last_name first_name)
-        </label>
-        <br /><br />
+<head>
+  <title> Illustrate form input validation> </title>
+  <link rel="stylesheet" href="form_proc.css" type="text/css" />
+  <script type="text/javascript" src="validator.onsubmit.js">
+  </script>
+</head>
 
-        <label>
-          <input type = "text"  id = "phone" name="phoneNumber"/>
-          Phone number (ddd)ddd-dddd
-        </label>
-        <br />  <br />
-        <input type = "submit"  id = "submit" />
-		<input type = "reset"  id = "reset" />
-      </p>
-    </form>
+<body>
+  <h3> Customer Information </h3>
+  <form action="display_info.php" method="post" id="formdisplayinfo">
 
-  </body>
+    <p>
+      <label>
+        <input type="text" id="custName" name="customerName" /> Name (last_name first_name)
+      </label>
+      <br />
+      <br />
+
+      <label>
+        <input type="text" id="phone" name="phoneNumber" /> Phone number (ddd)ddd-dddd
+      </label>
+      <br />
+      <br />
+      <input type="submit" id="submit" />
+      <input type="reset" id="reset" />
+    </p>
+  </form>
+
+</body>
+
 </html>

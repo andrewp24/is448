@@ -1,16 +1,17 @@
 // pswd_chk.js
 //   An example of input password checking, using the submit 
 //   event
-     
+
 // The event handler function for password checking
 
 window.onload = pageLoad;
-function pageLoad(){
-  document.getElementById("second").onblur=chkPasswords;
-  document.getElementById("submitbutton").onclick=chkPasswords;
+
+function pageLoad() {
+  document.getElementById("second").onblur = chkPasswords;
+  document.getElementById("submitbutton").onclick = chkPasswords;
 }
 
-function chkPasswords() { 
+function chkPasswords() {
   var init_value = document.getElementById("initial").value;
   var sec_value = document.getElementById("second").value;
   if (init_value == "") {
