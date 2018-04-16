@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="EN">
+
+<head>
+  <title>Get weather</title>
+  <link rel="stylesheet" type="text/css" href="form_proc.css">
+
+</head>
+
+<body>
+  <script type="text/javascript">
+    alert("Welcome to this page.")
+  </script>
+  <h1> Get temperature! </h1>
+  <form name="info" action="show.php" method="post">
+    <label>
+      City:
+      <select id="city" name="city">
+        <option value="baltimore">Baltimore</option>
+        <option value="atlanta">Atlanta</option>
+        <option value="orlando">Orlando</option>
+        <option vaule="wilmington">Wilmington</option>
+        <option value="jacksonville">Jacksonville</option>
+      </select>
+    </label>
+    <br />
+    <label>
+      State:
+      <select id="state" name="state">
+        <option value="maryland">Maryland</option>
+        <option value="florida">Florida</option>
+        <option value="georgia">Georgia</option>
+        <option value="delaware">Delaware</option>
+      </select>
+    </label>
+
+    <br/>
+    <label>
+      Month:
+      <select id="month" name="month">
+        <option value="jan">Jan</option>
+        <option value="feb">Feb</option>
+        <option value="mar">Mar</option>
+        <option value="apr">Apr</option>
+        <option value="may">May</option>
+        <option value="june">June</option>
+        <option value="july">July</option>
+        <option value="august">August</option>
+        <option value="sep">Sep</option>
+        <option value="oct">Oct</option>
+        <option value="nov">Nov</option>
+        <option value="dec">Dec</option>
+      </select>
+    </label>
+    <br />
+
+
+    <label>
+      Year:
+      <select id="year" name="year">
+        <option value="2016">2016</option>
+        <option value="2015">2015</option>
+
+      </select>
+    </label>
+    <br />
+
+    <label>
+      <input type="submit" id="submitButton" value="Get me the temperature" />
+    </label>
+
+
+  </form>
+</body>
+
+</html>
