@@ -14,9 +14,10 @@ function pageLoad() {
 // The event handler for a radio button collection
 function colorChoice() {
     var selected;
-
+    var name = document.getElementById("nameBox").value;
     var all = document.getElementsByName("colorButton");
     var i;
+
     for (i = 0; i < all.length; i++) {
         if (all[i].checked) {
             selected = all[i].value;
@@ -28,23 +29,18 @@ function colorChoice() {
 
     switch (selected) {
         case "red":
-            var name = document.getElementById("nameBox").value;
             alert(name + ", your favorite color is red");
             break;
         case "blue":
-            var name = document.getElementById("nameBox").value;
             alert(name + ", your favorite color is blue");
             break;
         case "green":
-            var name = document.getElementById("nameBox").value;
             alert(name + ", your favorite color is green");
             break;
         case "yellow":
-            var name = document.getElementById("nameBox").value;
             alert(name + ", your favorite color is yellow");
             break;
         case "orange":
-            var name = document.getElementById("nameBox").value;
             alert(name + ", your favorite color is orange");
             break;
         default:
