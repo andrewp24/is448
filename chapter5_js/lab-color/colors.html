@@ -2,35 +2,40 @@
 <!DOCTYPE html PUBLIC "-//w3c//DTD XHTML 1.1//EN"
   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 
+<!-- e51.hmtl
+     A solution to Exercise 5.1 - events with radio buttons
+     -->
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-  <title> colors </title>
-  <!-- add here the script tag to reference the Javascript file that will contain your event handler function -->
-
-
+  <title> Colors </title>
+  <script type="text/javascript" src="colors.js"></script>
 </head>
 
 <body>
-  <h4> Choose your favorite color </h4>
-  <form id="colorsForm">
+  <h2> Choose your favorite color </h2>
+  <form name="myForm" action="">
+
+    <label>Enter your name:
+      <input type="text" name="nameTextBox" id="nameBox" />
+    </label>
+
+    <p>Choose your color </p>
     <label>
-      <input type="radio" name="colorButton" value="red" /> Red </label>
+      <input type="radio" name="colorButton" value="red" id="color1" /> Red </label>
     <br />
     <label>
-      <input type="radio" name="colorButton" value="blue" /> Blue </label>
+      <input type="radio" name="colorButton" value="blue" id="color2" /> Blue </label>
     <br />
     <label>
-      <input type="radio" name="colorButton" value="green" /> Green </label>
+      <input type="radio" name="colorButton" value="green" id="color3" /> Green </label>
     <br />
     <label>
-      <input type="radio" name="colorButton" value="yellow" /> Yellow </label>
+      <input type="radio" name="colorButton" value="yellow" id="color4" /> Yellow </label>
     <br />
     <label>
-      <input type="radio" name="colorButton" value="orange" /> Orange </label>
+      <input type="radio" name="colorButton" value="orange" id="color5" /> Orange </label>
   </form>
-
-
 </body>
 
 </html>
