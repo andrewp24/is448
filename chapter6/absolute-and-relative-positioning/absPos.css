@@ -1,0 +1,21 @@
+/* A style for a paragraph of text */
+
+.regtext {
+      font-family: Times;
+      font-size: 14pt;
+      width: 600px
+}
+
+/* A style for the text to be absolutely positioned */
+
+.abstext {
+      position: absolute;
+      top: 25px;
+      left: 50px;
+      font-family: Times;
+      font-size: 24pt;
+      font-style: italic;
+      letter-spacing: 1em;
+      color: red;
+      width: 500px
+}
