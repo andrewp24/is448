@@ -8,31 +8,32 @@
 <head>
   <title> Form validations </title>
   <link rel="stylesheet" type="text/css" href="form_proc.css" />
+  <script type="text/javascript" src="forms.js"></script>
 </head>
 
 <body>
   <h1> User information input form </h1>
   <form name="input" method="GET">
     First name:
-    <input type="text" name="firstName" style="margin-left:15px;" />
+    <input type="text" name="firstName" id="first_name" style="margin-left:15px;" />
     <br /> Middle initial:
-    <input type="text" name="middleName" size="1" />
+    <input type="text" name="middleName" id="initial" size="1" />
     <br /> Last name:
-    <input type="text" name="lastName" style="margin-left:16px;" />
+    <input type="text" name="lastName" id="last_name" style="margin-left:16px;" />
     <br />
     <br /> Address:
-    <input type="text" name="address" style="margin-left:26px;" />
+    <input type="text" name="address" id="address" style="margin-left:26px;" />
     <br /> Apt No.:
     <input type="text" name="apt_no" style="margin-left:26px;" />
     <br />
     <br /> City:
-    <input type="text" name="city" style="margin-left:56px;" />
+    <input type="text" name="city" id="city" style="margin-left:56px;" />
     <br /> State:
     <input type="text" name="state" style="margin-left:50px;" />
     <br />
     <br />
     <br />
-    <input type="submit" value="Submit" />
+    <input type="submit" value="Submit" id="submit_button" />
     <br />
   </form>
 </body>
