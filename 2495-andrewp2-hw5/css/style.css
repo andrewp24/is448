@@ -1,0 +1,36 @@
+body {
+    background-color: blue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.content_area {
+    position: absolute;
+    width: 600px;
+    left: 150px;
+    top: 100px;
+    background-color: white;
+    border: 1px black solid;
+    padding: 10px;
+}
+
+.fav_team {
+    color: gold;
+    font-style: italic;
+    font-size: 125%;
+}
+
+.players {
+    color: green;
+    font-style: italic;
+    font-size: 125%;
+}
+
+label {
+    float: left;
+    width: 150px;
+    text-align: left;
+}
+
+input {
+    margin-bottom: 2px;
+}
