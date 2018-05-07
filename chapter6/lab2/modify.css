@@ -27,7 +27,7 @@ textarea {
 	font-size: 12pt;
 }
 
-.parrotImage {
+#pic {
 	position: absolute;
 	left: 100px;
 	top: 100px;
