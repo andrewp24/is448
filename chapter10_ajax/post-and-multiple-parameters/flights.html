@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="form_proc.css" />
+    <script type="text/javascript" src="flights.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/prototype/1.7.3.0/prototype.js"></script>
+</head>
+
+<body>
+    <h1>Show flights</h1>
+
+    <form action="" method="">
+        <div>
+            <label>Start location:
+                <input type="text" id="start" name="start" />
+            </label>
+            <br/>
+            <label>End location:
+                <input type="text" id="end" name="end" />
+            </label>
+            <br/>
+            <label>Non-stop:
+                <input type="checkbox" id="stops" name="stops" value="0" />
+            </label>
+            <br/>
+            <label>
+                <input type="button" id="showF" name="showF" value="show flights" />
+            </label>
+
+        </div>
+
+        <div id="result"></div>
+
+    </form>
+
+</body>
+
+</html>

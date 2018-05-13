@@ -1,0 +1,50 @@
+<html>
+
+<head>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/prototype/1.7.3.0/prototype.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/scriptaculous/1.9.0/scriptaculous.js"></script>
+	<script type="text/javascript" src="usingEffects.js"></script>
+	<link rel="stylesheet" type="text/css" href="usingEffects.css" />
+</head>
+
+<body>
+	<!-- Blinds up effect -->
+	<div id="sidebar" onclick="using_blind_up(this.id);">
+		I am going to try some scriptaculous stuff with this sidebar: Blinds up
+	</div>
+
+	<!-- Switch off effect -->
+	<div id="bar2" onclick="using_switch_off(this.id);">
+		I am going to try some scriptaculous stuff with this sidebar: Switch off
+	</div>
+
+	<!-- Squishing effect -->
+	<div id="bar3" onclick="using_squish(this.id);">
+		Squishing
+	</div>
+
+	<!-- Appear and fade effect -->
+	<div id="bar4">
+		<div id="appear_demo" style="display:none; width:80px; height:80px; background:#c2defb; border:1px solid #333;"></div>
+		<ul>
+			<li>
+				<a href="#" onclick="using_appear(appear_demo);">
+					Click here to see a box appear!
+				</a>
+			</li>
+			<li>
+				<a href="#" onclick="new Effect.Fade($('appear_demo'));">
+					Reset
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<!-- Shake effect -->
+	<div id="bar5" onclick="new Effect.Shake($(this));">
+		I am going to try some scriptaculous stuff with this sidebar: Shake
+	</div>
+
+</body>
+
+</html>

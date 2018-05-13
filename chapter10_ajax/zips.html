@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>Return zip codes given a city name</title>
+
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Language" content="en-us" />
+
+
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/prototype/1.6.0.3/prototype.js"></script>
+
+	<script type="text/javascript" src="get_zips.js"></script>
+	<link rel="stylesheet" href="form_proc.css">
+</head>
+
+<body>
+	<h1>Form to collect address of user</h1>
+	<form action="displayinfo.php" method="post">
+		Enter your address here
+		<br/>
+		<br/> Street name and house number:
+		<input type="text" name="street" />
+		<br/> State:
+		<select id="state" name="state">
+			<option value="md">Maryland</option>
+			<option value="de">Delaware</option>
+			<option value="ny">New York</option>
+		</select>
+		<br/> Zip:
+		<div id="ziparea">
+			<!--zip codes should go into this select box -->
+			<select id="zip" name="zip">
+				<option value="">..</option>
+			</select>
+		</div>
+		<br/>
+		<input type="submit" value="submit" />
+		<input type="reset" value="reset" />
+	</form>
+
+</body>
+
+</html>

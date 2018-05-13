@@ -1,0 +1,23 @@
+<html>
+
+<head>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/prototype/1.7.3.0/prototype.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/scriptaculous/1.9.0/scriptaculous.js"></script>
+	<script type="text/javascript">
+		window.onload = function () {
+			new Draggable("draggabledemo1");
+			new Draggable("draggabledemo2", {
+				revert: true,
+				snap: [40, 40]
+			});
+		};
+	</script>
+</head>
+
+<body>
+	<div id="draggabledemo1">Draggable demo 1.</div>
+	<div id="draggabledemo2">Draggable demo. {snap: [40,40], revert: true}</div>
+
+</body>
+
+</html>

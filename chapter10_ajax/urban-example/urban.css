@@ -1,0 +1,30 @@
+body,
+h1 {
+    margin: 0;
+}
+
+body>div {
+    padding: 8px;
+}
+
+h1 {
+    background-color: #ddd;
+    font-family: sans-serif;
+    padding: 5px;
+}
+
+.example {
+    font-style: italic;
+}
+
+#controls {
+    background-color: #eee;
+}
+
+#w3c {
+    text-align: right;
+}
+
+#w3c img {
+    border: 0;
+}

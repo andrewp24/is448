@@ -1,0 +1,17 @@
+body {
+	position: absolute;
+	top: 100px;
+	left: 200px;
+	background-color: CCCC99;
+}
+
+#info {
+	background-color: white;
+	padding: 10px;
+}
+
+#middle {
+	position: absolute;
+	left: 100px;
+	top: 30px;
+}

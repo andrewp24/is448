@@ -1,0 +1,86 @@
+body {
+	font-size: 12pt;
+	font-family: Arial, sans-serif;
+}
+
+#sidebar {
+	border: 2px, solid;
+	position: absolute;
+	left: 20px;
+	padding: 5px;
+	background-color: yellow;
+	width: 100px;
+}
+
+#bar2 {
+	border: 2px, solid;
+	position: absolute;
+	left: 200px;
+	padding: 5px;
+	background-color: #C0C0C0;
+	width: 100px;
+}
+
+#bar3 {
+	border: 2px, solid;
+	position: absolute;
+	left: 400px;
+	padding: 5px;
+	background-color: pink;
+	width: 100px;
+	height: 100px;
+}
+
+#bar4 {
+	border: 2px, solid;
+	position: absolute;
+	left: 600px;
+	padding: 5px;
+	background-color: white;
+	width: 100px;
+	height: 100px;
+}
+
+#bar5 {
+	border: 2px, solid;
+	position: absolute;
+	left: 800px;
+	padding: 5px;
+	background-color: black;
+	color: white;
+	width: 100px;
+	height: 150px;
+}
+
+#bar6 {
+	border: 2px, solid;
+	position: absolute;
+	top: 300px;
+	left: 20px;
+	padding: 5px;
+	background-color: pink;
+	width: 100px;
+	height: 100px;
+}
+
+#bar7 {
+	border: 2px, solid;
+	position: absolute;
+	top: 300px;
+	left: 200px;
+	padding: 5px;
+	background-color: pink;
+	width: 100px;
+	height: 100px;
+}
+
+#bar8 {
+	border: 2px, solid;
+	position: absolute;
+	top: 300px;
+	left: 400px;
+	padding: 5px;
+	background-color: pink;
+	width: 100px;
+	height: 100px;
+}

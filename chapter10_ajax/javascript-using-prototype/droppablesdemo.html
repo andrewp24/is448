@@ -1,0 +1,34 @@
+<html>
+
+<head>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/prototype/1.7.3.0/prototype.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/scriptaculous/1.9.0/scriptaculous.js"></script>
+	<script type="text/javascript">
+		window.onload = function () {
+			new Draggable("product1");
+			new Draggable("product2");
+			Droppables.add("droptarget", {
+				onDrop: productDrop
+			});
+		}
+
+		function productDrop(drag, drop, event) {
+			alert("You dropped " + drag.id);
+		}
+	</script>
+	<style type="text/css">
+		div#droptarget {
+			border: 1px solid;
+			width: 400px;
+			height: 200px;
+		}
+	</style>
+</head>
+
+<body>
+	<img id="product1" src="shirt.png" alt="shirt" />
+	<img id="product2" src="cup.png" alt="cup" />
+	<div id="droptarget"></div>
+</body>
+
+</html>

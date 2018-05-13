@@ -1,0 +1,30 @@
+<html>
+<!-- Inplace editing example using Scriptaculous -->
+
+<head>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/prototype/1.7.3.0/prototype.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/scriptaculous/1.9.0/scriptaculous.js"></script>
+	<script type="text/javascript">
+		//edit is the name of the HTML div element in which user is typing
+		//acceptdata.php is the program that is expected to take the user's comment
+		//and write it to file
+		window.onload = function () {
+			new Ajax.InPlaceEditor('edit', 'acceptdata.php');
+		}
+	</script>
+	<link rel="stylesheet" type="text/css" href="comments.css" />
+
+</head>
+
+<body>
+	<div id="middle">
+		<h1> My images </h1>
+		<img src="house.jpg" alt="beaut">
+		<div id="edit">
+			Click here to comment!
+		</div>
+		<a href="comments.php">View all comments</a>
+	</div>
+</body>
+
+</html>
