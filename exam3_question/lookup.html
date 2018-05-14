@@ -8,18 +8,18 @@
   <link rel="stylesheet" type="text/css" href="form_proc.css">
   <script type="text/javascript" src="check_code.js">
   </script>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/prototype/1.6.0.3/prototype.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/prototype/1.6.0.3/prototype.js"></script>
 </head>
 
 <body>
   <h1> Enter Username/password </h1>
   <form name="info" method="post" action="displayinfo.php">
-    <label>
+    <label id="usernameLabel">
       Username:
       <input type="text" id="username" name="username" size="15" />
     </label>
     <br/>
-    <label>
+    <label id="passwordLabel">
       Password:
       <input type="text" id="password" name="password" size="15" />
       <span id="comment"></span>
